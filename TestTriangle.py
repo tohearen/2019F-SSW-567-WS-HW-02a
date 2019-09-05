@@ -37,23 +37,23 @@ class TestTriangles(unittest.TestCase):
 
     # Isosceles
     def testIsoscelesTriangleA(self):
-        self.assertEqual('Equilateral', classifyTriangle(1, 1, 2), '1,1,2 should be isosceles')
+        self.assertEqual('Isosceles', classifyTriangle(4, 4, 2), '4,4,2 should be isosceles')
 
     def testIsoscelesTriangleB(self):
-        self.assertEqual('Isosceles', classifyTriangle(2, 1, 1), '2,1,1 should be isosceles')
+        self.assertEqual('Isosceles', classifyTriangle(2, 4, 4), '2,4,4 should be isosceles')
 
     def testIsoscelesTriangleC(self):
-        self.assertEqual('Isosceles', classifyTriangle(1, 2, 1), '1,2,1 should be isosceles')
+        self.assertEqual('Isosceles', classifyTriangle(4, 2, 4), '4,2,4 should be isosceles')
 
     # Scalene
     def testScaleneTriangleA(self):
-        self.assertEqual('Scalene', classifyTriangle(1, 1, 2), '1,1,2 should be scalene')
+        self.assertEqual('Scalene', classifyTriangle(7, 4, 6), '7,4,6 should be scalene')
 
     def testScaleneTriangleB(self):
-        self.assertEqual('Scalene', classifyTriangle(1, 2, 3), '1,2,3 should be scalene')
+        self.assertEqual('Scalene', classifyTriangle(6, 4, 7), '6,4,7 should be scalene')
 
     def testScaleneTriangleC(self):
-        self.assertEqual('Scalene', classifyTriangle(2, 3, 1), '2,3,1 should be scalene')
+        self.assertEqual('Scalene', classifyTriangle(4, 6, 7), '4,6,7 should be scalene')
 
     # InvalidInput
     def testInvalidInputA(self):
